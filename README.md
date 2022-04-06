@@ -48,6 +48,7 @@ python doql.py sql/prod/all_devices.sql
 ```
 3. Replace: **~/Source/Repos/d42-pydoql/doql.py** with your own path.
 4. Select a .sql file in Visual Studio Code and type **ctrl + shift + t**
+    - **Note** You need to have an open terminal. (View -> Terminal)
     - If everything works you should see a .csv file saved to the output path defined in the config file
 
 
