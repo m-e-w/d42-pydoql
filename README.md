@@ -7,8 +7,25 @@ A simple python script that:
 Fin.
 
 # Example Usage
-python doql.py sql/test/query.sql
+```
+python doql.py sql/prod/all_devices.sql
+```
 
+# Setup
+1. Install python (tested with 3.10.4)
+2. (Recommended) Create virtual environment
+    - See https://docs.python.org/3/tutorial/venv.html for information on creating and activating virtual environments.
+3. Install required packages
+    ```
+    pip install -r requirements.txt
+    ```
+4. Rename **config.json.sample** to **config.json** and replace settings with your own.
+5. Test it out
+    - Change to the root directory and call:
+        ```
+        python doql.py sql/prod/all_devices.sql
+        ```
+    - If everything works you should see a .csv file saved to the output path defined in the config file
 # Advanced Usage
 ## Custom Keyboard Shortcut in Visual Studio Code
 1. Open the keybindings.json file from the Command Palette (Ctrl+Shift+P) with the Preferences: Open Keyboard Shortcuts (JSON) command.
@@ -30,7 +47,7 @@ python doql.py sql/test/query.sql
 ]
 ```
 3. Replace: **~/Source/Repos/d42-pydoql/doql.py** with your own path.
-4. Rename **config.json.sample** to **config.json** and replace settings with your own.
-5. Select a .sql file and type **ctrl + shift + t**
+4. Select a .sql file in Visual Studio Code and type **ctrl + shift + t**
     - If everything works you should see a .csv file saved to the output path defined in the config file
+
 
