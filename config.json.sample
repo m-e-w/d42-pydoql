@@ -1,0 +1,12 @@
+{
+    "device42": {
+        "host": "https://192.168.1.0",
+        "username": "admin",
+        "password": "adm!nd42",
+        "verify": true
+    },
+    "other": {
+        "output_path": "out/",
+        "debug_level": "quiet"
+    }
+}
